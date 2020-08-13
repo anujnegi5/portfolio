@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193.294" height="43" viewBox="0 0 193.294 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #525260;
+        font-size: 39px;
+        font-family: Gotham-Bold, Gotham;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+      }
+
+      .cls-2 {
+        fill: #030504;
+        stroke: #525260;
+        stroke-miterlimit: 10;
+        stroke-width: 1.934px;
+      }
+
+      .cls-3 {
+        fill: #f85c81;
+        font-size: 22px;
+        font-family: Gotham-XLight, Gotham XLight;
+        font-weight: 300;
+        letter-spacing: -0.025em;
+      }
+    </style>
+  </defs>
+  <g id="Group_58" data-name="Group 58" transform="translate(-521.632 -525.143)">
+    <text id="AN" class="cls-1" transform="translate(521.632 561.143)"><tspan x="0" y="0">AN</tspan></text>
+    <line id="Line_19" data-name="Line 19" class="cls-2" x2="0.21" y2="33.348" transform="translate(587.805 529.706)"/>
+    <text id="ANUJ_NEGI" data-name="ANUJ NEGI" class="cls-3" transform="translate(595.926 553.707)"><tspan x="0" y="0">ANUJ NEGI</tspan></text>
+  </g>
+</svg>

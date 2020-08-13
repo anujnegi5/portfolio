@@ -1,0 +1,123 @@
+@font-face {
+  src: url("../assets/fonts/Atami-Bold.otf");
+  font-family: atami;
+}
+@font-face {
+  src: url("../assets/fonts/DMSans-Medium.ttf");
+  font-family: DMS;
+}
+@font-face {
+  src: url("../assets/fonts/DMSans-Regular.ttf");
+  font-family: DMSreg;
+}
+@font-face {
+  src: url("../assets/fonts/Futura\ Bold.ttf");
+  font-family: futura;
+}
+
+:root {
+  --accent-color: #f85c81;
+  --secondary-color: #525260;
+  --Bold-one: #27272e;
+  --shadow-nav: rgba(137, 129, 129, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility Classes */
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  font-family: atami;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 1rem 6rem;
+  box-shadow: 0 0.25rem 1rem var(--shadow-nav);
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+ul li,
+a {
+  text-decoration: none;
+}
+
+#navbar a {
+  font-size: 1.25rem;
+  padding: 0.75rem 0.5rem;
+}
+
+#navbar ul li a {
+  color: var(--secondary-color);
+  margin: 0 2.25rem;
+}
+
+#navbar ul li a.active {
+  color: var(--accent-color);
+  border-bottom: 0.2rem #f85c81 solid;
+}
+
+#navbar ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Showcase Area */
+
+#showcase .showcase-background {
+  position: absolute;
+  top: 8.125rem;
+  left: -68.75rem;
+}
+
+#showcase .container {
+  padding: 8.8rem 6.125rem;
+}
+
+#showcase .greet,
+#showcase .designation {
+  font-family: DMSreg;
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+}
+#showcase .designation {
+  line-height: 5rem;
+  text-decoration: underline;
+}
+
+#showcase .greet span {
+  color: var(--accent-color);
+}
+
+#showcase .l-heading {
+  font-family: futura;
+  /* line-height: 10rem; */
+  font-size: 7.5rem;
+  color: var(--Bold-one);
+}
+
+#showcase .social-media {
+  margin-top: 2.25rem;
+}
+#showcase .social-media img {
+  margin-right: 2.25rem;
+}
+
+#showcase .person-1 {
+  display: inline-block;
+  position: absolute;
+  top: 31rem;
+  left: 76rem;
+}
