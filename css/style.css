@@ -22,6 +22,7 @@
 :root {
   --accent-color: #f85c81;
   --purple-color: #6c63ff;
+  --yellow-color: #ffdc60;
   --secondary-color: #525260;
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
@@ -56,6 +57,9 @@
 
 .purple {
   color: var(--purple-color);
+}
+.yellow {
+  color: var(--yellow-color);
 }
 
 /* padding And Margin*/
@@ -294,16 +298,16 @@ header {
   background: #fcf8f5;
   margin: 6rem 9rem 3rem 4rem;
   height: 500px;
-  width: 1500px;
+  width: 1450px;
   border-radius: 35px;
   /* justify-content: space-between; */
 }
 #lat-projects .project-2 {
   display: flex;
   background: #f5f9fa;
-  margin: 3rem 4rem 3rem 9rem;
+  margin: 6rem 1rem 3rem 22rem;
   height: 500px;
-  width: 1500px;
+  width: 1450px;
   border-radius: 35px;
   /* justify-content: space-between; */
 }
@@ -312,21 +316,21 @@ header {
   background: #f6f7fc;
   margin: 6rem 9rem 3rem 4rem;
   height: 500px;
-  width: 1500px;
+  width: 1450px;
   border-radius: 35px;
   /* justify-content: space-between; */
 }
 
 #lat-projects .project-1 .project-info {
-  margin: 100px 212px 100px 150px;
+  margin: 70px 125px 70px 112px;
 }
 
 #lat-projects .project-2 .project-info {
-  margin: 100px 212px 100px 150px;
+  margin: 70px 112px 70px 112px;
 }
 
 #lat-projects .project-3 .project-info {
-  margin: 100px 212px 100px 150px;
+  margin: 70px 112px 70px 112px;
 }
 
 #lat-projects .project-1 a,
@@ -341,6 +345,7 @@ header {
   font-family: futura;
   font-size: 40px;
   padding-left: 11px;
+  margin: 1rem 0;
   color: #000;
 }
 
@@ -364,7 +369,6 @@ header {
 }
 
 #lat-projects .project-1 .project-info .project-type {
-  margin-bottom: 38px;
   margin-left: 20px;
   background: #f9daaf;
   padding: 1rem;
@@ -372,9 +376,15 @@ header {
 }
 
 #lat-projects .project-2 .project-info .project-type {
-  margin-bottom: 38px;
   margin-left: 20px;
   background: #d8f2fa;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+#lat-projects .project-3 .project-info .project-type {
+  margin-left: 20px;
+  background: #d6e1ff;
   padding: 1rem;
   border-radius: 50%;
 }
@@ -387,10 +397,15 @@ header {
   font-size: 16px;
 }
 
-#lat-projects .project-1 .project-img,
-#lat-projects .project-2 .project-img,
-#lat-projects .project-3 .project-img {
-  width: 603px;
-  margin-top: 84px;
-  margin-right: 140px;
+#lat-projects .project-1 .project-img img,
+#lat-projects .project-3 .project-img img {
+  width: 490px;
+  margin-top: 66px;
+  margin-right: 112px;
+}
+
+#lat-projects .project-2 .project-img img {
+  width: 490px;
+  margin-top: 66px;
+  margin-left: 112px;
 }
