@@ -40,7 +40,8 @@
   max-width: 1920px;
 }
 
-.box-2 {
+.box-2,
+.box-1 {
   position: relative;
   transition-property: transform;
   transition-duration: 0.2s;
@@ -48,6 +49,10 @@
 
 .box-2:hover {
   transform: translate(0, -4px);
+}
+.box-1:hover {
+  transform: translate(0, -1px);
+  text-decoration: underline;
 }
 
 /* Color classes */
@@ -285,6 +290,18 @@ header {
 
 /* latest project section */
 
+#lat-projects {
+  margin-top: 6rem;
+}
+
+#lat-projects .project-triangle {
+  z-index: -200;
+  height: 180vh;
+  background: url("../assets/svgs/Asset\ 3.svg") center center/cover no-repeat;
+  background-position: -700px 50px;
+  background-blend-mode: overlay;
+}
+
 #lat-projects .section-heading {
   font-family: futura;
   font-size: 3.5rem;
@@ -300,15 +317,17 @@ header {
   height: 500px;
   width: 1450px;
   border-radius: 35px;
+  box-shadow: 0 0.25rem 1rem var(--shadow-nav);
   /* justify-content: space-between; */
 }
 #lat-projects .project-2 {
   display: flex;
   background: #f5f9fa;
-  margin: 6rem 1rem 3rem 22rem;
+  margin: 6rem 2rem 3rem 25rem;
   height: 500px;
   width: 1450px;
   border-radius: 35px;
+  box-shadow: 0 0.25rem 1rem var(--shadow-nav);
   /* justify-content: space-between; */
 }
 #lat-projects .project-3 {
@@ -318,6 +337,7 @@ header {
   height: 500px;
   width: 1450px;
   border-radius: 35px;
+  box-shadow: 0 0.25rem 1rem var(--shadow-nav);
   /* justify-content: space-between; */
 }
 
@@ -330,7 +350,7 @@ header {
 }
 
 #lat-projects .project-3 .project-info {
-  margin: 70px 112px 70px 112px;
+  margin: 70px 90px 70px 112px;
 }
 
 #lat-projects .project-1 a,
@@ -397,6 +417,12 @@ header {
   font-size: 16px;
 }
 
+#lat-projects .project-1 .project-btn .h-change:hover,
+#lat-projects .project-2 .project-btn .h-change:hover,
+#lat-projects .project-3 .project-btn .h-change:hover {
+  color: var(--secondary-color);
+}
+
 #lat-projects .project-1 .project-img img,
 #lat-projects .project-3 .project-img img {
   width: 490px;
@@ -405,7 +431,7 @@ header {
 }
 
 #lat-projects .project-2 .project-img img {
-  width: 490px;
+  width: 465px;
   margin-top: 66px;
   margin-left: 112px;
 }
