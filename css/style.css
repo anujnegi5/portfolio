@@ -36,6 +36,7 @@
   --text-gray: #999fae;
   --light-pink: #fab8c4;
   --secondary-color: #525260;
+  --royal-blue-color: #5956e9;
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
 }
@@ -209,12 +210,13 @@ a {
   text-decoration: none;
 }
 
-#navbar a {
-  font-size: 1.1rem;
-  padding: 0.6rem 0.5rem;
+#navbar .logo a {
+  display: inline-block;
 }
 
 #navbar ul li a {
+  font-size: 1.1rem;
+  padding: 12px 0.5rem;
   color: var(--text-gray);
   margin: 0 2rem;
 }
@@ -432,7 +434,7 @@ header {
   margin-left: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  color: #707070;
+  color: var(--text-gray);
 }
 
 #lat-projects .project-1 .project-info .project-type {
@@ -502,9 +504,13 @@ header {
 
 /* About Me Section */
 
+#about-me {
+}
+
 #about-me .about-content {
   margin: 5rem 2rem;
   display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 #about-me .about-content .about-tagline {
@@ -516,6 +522,7 @@ header {
 #about-me .about-content .about .about-title {
   font-size: 3rem;
   font-family: gotham;
+  margin-bottom: 3rem;
 }
 
 #about-me .about-content .about .about-body {
