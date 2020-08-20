@@ -85,6 +85,9 @@
 .light-pink {
   color: var(--light-pink);
 }
+.royal-blue {
+  color: var(--royal-blue-color);
+}
 
 /* Button classes */
 .d-flex {
@@ -106,6 +109,11 @@
   font-size: 3.5rem;
   padding-left: 12px;
   border-left: 8px solid var(--accent-color);
+}
+
+.underline-accent {
+  text-decoration: underline;
+  text-decoration-color: var(--royal-blue-color);
 }
 
 /* padding And Margin*/
@@ -520,9 +528,18 @@ header {
 }
 
 #about-me .about-content .about .about-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: gotham;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+#about-me .about-content .about .about-title .underscore {
+  font-size: 7rem;
+  color: var(--royal-blue-color);
+}
+
+#about-me .about-content .about .about-body .big-font {
+  color: var(--royal-blue-color);
 }
 
 #about-me .about-content .about .about-body {
@@ -531,6 +548,11 @@ header {
   font-size: 1.5rem;
 }
 
+#about-me .about-content .about .about-body .open-line,
+#about-me .about-content .about .about-body .main-content,
+#about-me .about-content .about .about-body .end-line {
+  margin: 1rem 0;
+}
 /* about section end */
 
 /* footer */
@@ -541,8 +563,13 @@ header {
   font-family: DMS;
   font-size: 1.2rem;
   padding: 1.5rem;
+  margin-top: 10rem;
 }
 
 #footer .copyright {
   text-align: center;
+}
+
+#footer .footer-logo {
+  margin-top: 0.2rem;
 }
