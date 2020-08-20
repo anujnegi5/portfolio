@@ -22,12 +22,19 @@
   src: url("../assets/fonts/BrandonGrotesque-Black.ttf");
   font-family: brand;
 }
+@font-face {
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-family: pop-reg;
+}
 
 :root {
   --accent-color: #f85c81;
   --purple-color: #6c63ff;
   --yellow-color: #ffdc60;
   --orange-color: #fe6d3f;
+  --gray-color: #ecf2f6;
+  --text-gray: #999fae;
+  --light-pink: #fab8c4;
   --secondary-color: #525260;
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
@@ -73,6 +80,9 @@
 }
 .orange {
   color: var(--orange-color);
+}
+.light-pink {
+  color: var(--light-pink);
 }
 
 /* Button classes */
@@ -200,22 +210,23 @@ a {
 }
 
 #navbar a {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   padding: 0.6rem 0.5rem;
 }
 
 #navbar ul li a {
-  color: var(--secondary-color);
-  margin: 0 2.25rem;
+  color: var(--text-gray);
+  margin: 0 2rem;
 }
 
 #navbar .container ul li a.active {
-  color: var(--accent-color);
+  color: #000;
   border-bottom: 0.2rem #f85c81 solid;
 }
 
 #navbar ul li a:hover {
-  color: var(--accent-color);
+  color: #000;
+  border-bottom: 0.2rem #f85c81 solid;
 }
 
 /* Showcase Area */
@@ -224,6 +235,7 @@ header {
 }
 #showcase {
   overflow-x: hidden;
+  /* background: var(--gray-color); */
 }
 #showcase .background {
   position: relative;
@@ -327,7 +339,9 @@ header {
 /* latest project section */
 
 #lat-projects {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  background: var(--gray-color);
 }
 
 #lat-projects .project-triangle {
@@ -490,12 +504,38 @@ header {
 
 #about-me .about-content {
   margin: 5rem 2rem;
-  flex-direction: column;
+  display: grid;
 }
 
 #about-me .about-content .about-tagline {
-  width: 50%;
   font-size: 140px;
-  font-family: brand;
+  font-family: DMS;
   line-height: 10rem;
+}
+
+#about-me .about-content .about .about-title {
+  font-size: 3rem;
+  font-family: gotham;
+}
+
+#about-me .about-content .about .about-body {
+  color: var(--text-gray);
+  font-family: pop-reg;
+  font-size: 1.5rem;
+}
+
+/* about section end */
+
+/* footer */
+
+#footer {
+  background: var(--gray-color);
+  color: var(--text-gray);
+  font-family: DMS;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+#footer .copyright {
+  text-align: center;
 }
