@@ -181,6 +181,10 @@
   border: 1px solid var(--gray-color);
 }
 
+.dark {
+  border: 1px solid #ddd;
+}
+
 #showcase .fa-chevron-down {
   color: #fff;
   background: #272727;
@@ -521,7 +525,7 @@ header {
 /* About Me Section */
 
 #about-me {
-  margin-top: 8rem;
+  margin: 12rem 0 15rem 0;
 }
 
 #about-me .about-content {
@@ -565,6 +569,54 @@ header {
 }
 
 /* about section end */
+
+/* Contact section start */
+
+#contact {
+  margin-top: 8rem;
+  margin-left: 4rem;
+}
+
+#contact .contact-content {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+#contact .email-svg {
+  margin-left: 8rem;
+  height: 400px;
+}
+
+#contact .email-content {
+  /* background: var(--gray-color); */
+  margin-right: 4rem;
+  padding: 2rem;
+  border-radius: 20px;
+  /* box-shadow: 0 0.2rem 0.5rem #ddd; */
+}
+
+#contact .email-content .email-title {
+  font-family: futura;
+  font-size: 3rem;
+  margin: 4rem 0 0 0;
+  text-decoration: underline;
+}
+
+#contact .email-content .email {
+  display: inline-block;
+  font-family: futura;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+#contact .email-content .email:hover {
+  text-decoration: underline;
+}
+
+#contact .email-content .accent-color {
+  font-family: futura;
+  font-size: 3rem;
+}
 
 /* footer */
 
