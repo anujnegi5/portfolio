@@ -1,0 +1,126 @@
+<svg id="Group_111" data-name="Group 111" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="864" height="711.453" viewBox="0 0 864 711.453">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        fill: #6c63ff;
+      }
+
+      .cls-10, .cls-11, .cls-14, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10, .cls-11, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: blue;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 10.745 10.745;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 12.495 12.495;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 11.482 11.482;
+      }
+
+      .cls-8 {
+        stroke-dasharray: 12.07 12.07;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 11.7 11.7;
+      }
+
+      .cls-10 {
+        stroke-dasharray: 11.806 11.806;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 12.065 12.065;
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-13 {
+        fill: #fab8c4;
+      }
+
+      .cls-14 {
+        stroke: #27272e;
+        stroke-width: 2px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.535" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_283" data-name="Path 283" class="cls-1" d="M130.535,660.405V573.187l85.2-87.219,76.352-55.723,79.671-83.584,94.055-37.553H586.429l99.589-121.136,86.31-106.6V660.405Z"/>
+  <g id="Group_110" data-name="Group 110" class="cls-2">
+    <line id="Line_21" data-name="Line 21" class="cls-3" y2="87.218" transform="translate(132.793 558.506)"/>
+    <line id="Line_22" data-name="Line 22" class="cls-4" y2="6" transform="translate(132.793 558.506)"/>
+    <line id="Line_23" data-name="Line 23" class="cls-5" y2="59.101" transform="translate(132.793 575.251)"/>
+    <line id="Line_24" data-name="Line 24" class="cls-4" y2="6" transform="translate(132.793 639.724)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-3" y2="174.437" transform="translate(226.069 471.287)"/>
+    <line id="Line_26" data-name="Line 26" class="cls-4" y2="6" transform="translate(226.069 471.287)"/>
+    <line id="Line_27" data-name="Line 27" class="cls-6" y2="143.694" transform="translate(226.069 489.783)"/>
+    <line id="Line_28" data-name="Line 28" class="cls-4" y2="6" transform="translate(226.069 639.724)"/>
+    <line id="Line_29" data-name="Line 29" class="cls-3" y2="230.16" transform="translate(314.17 415.564)"/>
+    <line id="Line_30" data-name="Line 30" class="cls-4" y2="6" transform="translate(314.17 415.564)"/>
+    <line id="Line_31" data-name="Line 31" class="cls-7" y2="200.936" transform="translate(314.17 433.047)"/>
+    <line id="Line_32" data-name="Line 32" class="cls-4" y2="6" transform="translate(314.17 639.724)"/>
+    <line id="Line_33" data-name="Line 33" class="cls-3" y2="313.744" transform="translate(405.906 331.98)"/>
+    <line id="Line_34" data-name="Line 34" class="cls-4" y2="6" transform="translate(405.906 331.98)"/>
+    <line id="Line_35" data-name="Line 35" class="cls-8" y2="283.64" transform="translate(405.906 350.05)"/>
+    <line id="Line_36" data-name="Line 36" class="cls-4" y2="6" transform="translate(405.906 639.724)"/>
+    <line id="Line_37" data-name="Line 37" class="cls-3" y2="351.296" transform="translate(499.838 294.428)"/>
+    <line id="Line_38" data-name="Line 38" class="cls-4" y2="6" transform="translate(499.838 294.428)"/>
+    <line id="Line_39" data-name="Line 39" class="cls-9" y2="321.747" transform="translate(499.838 312.128)"/>
+    <line id="Line_40" data-name="Line 40" class="cls-4" y2="6" transform="translate(499.838 639.724)"/>
+    <line id="Line_41" data-name="Line 41" class="cls-3" y2="351.296" transform="translate(588.964 294.428)"/>
+    <line id="Line_42" data-name="Line 42" class="cls-4" y2="6" transform="translate(588.964 294.428)"/>
+    <line id="Line_43" data-name="Line 43" class="cls-9" y2="321.747" transform="translate(588.964 312.128)"/>
+    <line id="Line_44" data-name="Line 44" class="cls-4" y2="6" transform="translate(588.964 639.724)"/>
+    <line id="Line_45" data-name="Line 45" class="cls-3" y2="472.433" transform="translate(682.177 173.291)"/>
+    <line id="Line_46" data-name="Line 46" class="cls-4" y2="6" transform="translate(682.177 173.291)"/>
+    <line id="Line_47" data-name="Line 47" class="cls-10" y2="442.724" transform="translate(682.177 191.097)"/>
+    <line id="Line_48" data-name="Line 48" class="cls-4" y2="6" transform="translate(682.177 639.724)"/>
+    <line id="Line_49" data-name="Line 49" class="cls-3" y2="579.034" transform="translate(772.147 66.69)"/>
+    <line id="Line_50" data-name="Line 50" class="cls-4" y2="6" transform="translate(772.147 66.69)"/>
+    <line id="Line_51" data-name="Line 51" class="cls-11" y2="548.937" transform="translate(772.147 84.755)"/>
+    <line id="Line_52" data-name="Line 52" class="cls-4" y2="6" transform="translate(772.147 639.724)"/>
+  </g>
+  <circle id="Ellipse_367" data-name="Ellipse 367" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(109.777 535.49)"/>
+  <circle id="Ellipse_368" data-name="Ellipse 368" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(203.053 448.271)"/>
+  <circle id="Ellipse_369" data-name="Ellipse 369" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(291.154 392.548)"/>
+  <circle id="Ellipse_370" data-name="Ellipse 370" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(382.89 308.964)"/>
+  <circle id="Ellipse_371" data-name="Ellipse 371" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(476.822 271.412)"/>
+  <circle id="Ellipse_372" data-name="Ellipse 372" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(565.948 271.412)"/>
+  <circle id="Ellipse_373" data-name="Ellipse 373" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(659.161 150.275)"/>
+  <circle id="Ellipse_374" data-name="Ellipse 374" class="cls-12" cx="23.016" cy="23.016" r="23.016" transform="translate(749.131 43.674)"/>
+  <circle id="Ellipse_375" data-name="Ellipse 375" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(114.622 540.336)"/>
+  <circle id="Ellipse_376" data-name="Ellipse 376" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(207.898 453.116)"/>
+  <circle id="Ellipse_377" data-name="Ellipse 377" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(296 397.393)"/>
+  <circle id="Ellipse_378" data-name="Ellipse 378" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(387.736 313.81)"/>
+  <circle id="Ellipse_379" data-name="Ellipse 379" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(481.668 276.258)"/>
+  <circle id="Ellipse_380" data-name="Ellipse 380" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(570.794 276.258)"/>
+  <circle id="Ellipse_381" data-name="Ellipse 381" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(664.006 155.12)"/>
+  <circle id="Ellipse_382" data-name="Ellipse 382" class="cls-13" cx="18.17" cy="18.17" r="18.17" transform="translate(753.977 48.52)"/>
+  <line id="Line_53" data-name="Line 53" class="cls-14" y2="711.453" transform="translate(37.16)"/>
+  <line id="Line_54" data-name="Line 54" class="cls-14" x2="864" transform="translate(0 673.345)"/>
+  <path id="Path_285" data-name="Path 285" class="cls-12" d="M290.265,772.026l-3.3-5.073,3.6-27.252a60.366,60.366,0,0,0-6.472-8.252,60.659,60.659,0,0,1-.959-10.211,138.445,138.445,0,0,0-4.488-19.2l5.665,1.545,8.241-20.014v-4.709l3.532-2.354s-4.709-7.064-9.418,0c0,0,1.177,4.709,0,7.064s-4.709,10.6-4.709,10.6h-3l.642-3.532h-6.158c-.3-.417-.6-.816-.905-1.177l4.709-10.6-2.207-1.656,8.094-10.117,1.177-21.191c4.68-1.56,5.742-6.22,5.927-9.188a2.007,2.007,0,0,0-2.512-2.049c-10.164,2.6-8.123,7.705-8.123,7.705l-3.532,20.014-4.868,7.65a10.593,10.593,0,0,0-6.031-7.859l2.658-3.323a21.38,21.38,0,0,0-11.718.568c-10.548,4.009-10.527,19.35.007,23.4a10.555,10.555,0,0,0,4.647.759v-1.177c.15,0,.295-.016.443-.022-.179,1.1-.346,2.333-.438,3.553h0c-2.355,0-2.355,12.95,1.177,15.3l-1.177,12.95v7.064c2.355,5.886,7.064,5.886,7.064,5.886l3.532,16.482a6.115,6.115,0,0,0,4.136.125l.573,4.584s-10.6,8.241-10.6,20.014l-.386.772-.791-.772-7.064,5.886,9.418,11.773h9.418c2.355-5.886-7.064-7.064-7.064-7.064l-.048-6.05h0l10.466-12.429A20.357,20.357,0,0,0,281.585,765l.09.858-1.082-.224-2.784,8.763,5.357,1.821a19.6,19.6,0,0,0,16.854-2.039C298.837,767.948,290.265,772.026,290.265,772.026Z" transform="translate(-168 -94.274)"/>
+</svg>

@@ -173,6 +173,10 @@
   font-size: 64px;
 }
 
+.text-regular {
+  font-size: 32px;
+}
+
 .horizontal {
   border: 1px solid var(--gray-color);
 }
@@ -517,6 +521,7 @@ header {
 /* About Me Section */
 
 #about-me {
+  margin-top: 8rem;
 }
 
 #about-me .about-content {
@@ -532,7 +537,7 @@ header {
 }
 
 #about-me .about-content .about .about-title {
-  font-size: 5rem;
+  font-size: 5.25rem;
   font-family: gotham;
   margin-bottom: 1rem;
 }
@@ -547,6 +552,7 @@ header {
 }
 
 #about-me .about-content .about .about-body {
+  margin-top: 2rem;
   color: var(--text-gray);
   font-family: pop-reg;
   font-size: 1.5rem;
@@ -557,6 +563,7 @@ header {
 #about-me .about-content .about .about-body .end-line {
   margin: 1rem 0;
 }
+
 /* about section end */
 
 /* footer */
