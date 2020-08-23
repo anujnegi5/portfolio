@@ -47,6 +47,15 @@
   padding: 0;
 }
 
+/* h1::selection {
+  background: var(--Bold-one);
+  color: white;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Utility Classes */
 .container {
   margin: auto;
@@ -214,8 +223,22 @@
 #navbar .container {
   display: flex;
   font-family: atami;
+  align-items: center;
   justify-content: space-between;
   padding: 0.85rem 3rem;
+}
+
+#navbar .social-media-nav div {
+  position: relative;
+  left: 60%;
+  display: inline-block;
+  justify-content: center;
+}
+
+#navbar .social-media-nav img {
+  margin-top: 0.2rem;
+  margin-right: 2.25rem;
+  height: 36px;
 }
 
 #navbar ul {
@@ -228,6 +251,10 @@
 #navbar ul li,
 a {
   text-decoration: none;
+}
+
+#navbar .index {
+  display: inline-block;
 }
 
 #navbar .logo a {
@@ -525,7 +552,8 @@ header {
 /* About Me Section */
 
 #about-me {
-  margin: 12rem 0 15rem 0;
+  margin: 6rem 0 7rem 0;
+  padding: 6rem 0 4rem 0;
 }
 
 #about-me .about-content {
@@ -635,4 +663,109 @@ header {
 
 #footer .footer-logo {
   margin-top: 0.2rem;
+}
+
+/* MY WORK  */
+
+#my-work .showcase-content {
+  margin: 5rem 3rem;
+}
+
+#my-work .showcase-content .l-heading {
+  font-family: futura;
+  line-height: 10rem;
+  font-size: 8rem;
+  color: var(--Bold-one);
+  text-align: center;
+}
+
+/* Cards */
+
+#cards-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards {
+  margin: 4rem 10rem;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-gap: 6rem;
+}
+
+#cards .card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "links";
+
+  font-family: DMS;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(201, 201, 201, 0.9);
+  text-align: center;
+
+  transition: 0.5s ease;
+  /* cursor: pointer; */
+}
+
+.card-image {
+  grid-area: image;
+  background: url("../img/projects/backiee-1.jpg") center center/cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: var(--accent-color);
+  font-size: 13px;
+}
+
+.card-text p {
+  color: var(--text-gray);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size-adjust: 28px;
+}
+
+.card-links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--gray-color);
+}
+
+.card-links .link a {
+  text-decoration: none;
+  color: var(--Bold-one);
+}
+
+.card-links .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-links .link .github-link {
+  font-size: 16px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(201, 201, 201, 0.6);
 }
