@@ -125,6 +125,8 @@ html {
   text-decoration-color: var(--royal-blue-color);
 }
 
+/* Scroll Bar */
+
 /* padding And Margin*/
 .p-1 {
   padding: 1rem;
@@ -254,7 +256,17 @@ a {
 }
 
 #navbar .index {
-  display: inline-block;
+  display: none;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #navbar .logo a {

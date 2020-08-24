@@ -1,3 +1,17 @@
+var opacity = 0;
+var intervalID = 0;
+
+function fadeOut() {
+  intervalID = setInterval(hide, 200);
+}
+
+function hide() {
+  var socialMedia = document.querySelector(".index");
+  opacity = Number(
+    window.getComputedStyle(socialMedia).getPropertyValue("opacity")
+  );
+}
+
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos > 650) {
@@ -5,8 +19,4 @@ window.onscroll = function () {
   } else {
     document.querySelector(".index").style.display = "none";
   }
-  document.querySelector(".index").style.opacity = `${Math.min(
-    1,
-    Math.max(0, opacity)
-  )}`;
 };
