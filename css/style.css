@@ -47,13 +47,12 @@
   padding: 0;
 }
 
-/* h1::selection {
-  background: var(--Bold-one);
-  color: white;
-} */
-
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Utility Classes */
@@ -77,6 +76,11 @@ html {
   text-decoration: underline;
 }
 
+/* display classes */
+.d-flex {
+  display: flex;
+}
+
 /* Color classes */
 .accent-color {
   color: var(--accent-color);
@@ -96,11 +100,6 @@ html {
 }
 .royal-blue {
   color: var(--royal-blue-color);
-}
-
-/* Button classes */
-.d-flex {
-  display: flex;
 }
 
 .button {
@@ -126,6 +125,15 @@ html {
 }
 
 /* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(#a18cd1, #fc9ae0); */
+  background: var(--accent-color);
+  border-radius: 6px;
+}
 
 /* padding And Margin*/
 .p-1 {
@@ -220,9 +228,6 @@ html {
   box-shadow: 0 0.1rem 1rem var(--shadow-nav);
   position: sticky;
   top: 0;
-}
-
-#navbar .container {
   display: flex;
   font-family: atami;
   align-items: center;
@@ -250,11 +255,6 @@ html {
   list-style: none;
 }
 
-#navbar ul li,
-a {
-  text-decoration: none;
-}
-
 #navbar .index {
   display: none;
   animation: fadeIn 1s forwards;
@@ -272,6 +272,9 @@ a {
 #navbar .logo a {
   display: inline-block;
 }
+#navbar .logo {
+  height: 40px;
+}
 
 #navbar ul li a {
   font-size: 1.1rem;
@@ -280,7 +283,7 @@ a {
   margin: 0 2rem;
 }
 
-#navbar .container ul li a.active {
+#navbar ul li a.active {
   color: #000;
   border-bottom: 0.2rem #f85c81 solid;
 }
@@ -291,11 +294,9 @@ a {
 }
 
 /* Showcase Area */
-header {
-  height: 100vh;
-}
 #showcase {
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
   /* background: var(--gray-color); */
 }
 #showcase .background {
@@ -426,8 +427,8 @@ header {
   width: 1450px;
   border-radius: 35px;
   box-shadow: 0 0.25rem 1rem var(--shadow-nav);
-  /* justify-content: space-between; */
 }
+
 #lat-projects .project-2 {
   display: flex;
   background: #f5f9fa;
@@ -436,7 +437,6 @@ header {
   width: 1450px;
   border-radius: 35px;
   box-shadow: 0 0.25rem 1rem var(--shadow-nav);
-  /* justify-content: space-between; */
 }
 #lat-projects .project-3 {
   display: flex;
@@ -564,7 +564,7 @@ header {
 /* About Me Section */
 
 #about-me {
-  margin: 6rem 0 7rem 0;
+  /* margin: auto 0 auto 0; */
   padding: 6rem 0 4rem 0;
 }
 
@@ -613,7 +613,10 @@ header {
 /* Contact section start */
 
 #contact {
-  margin-top: 8rem;
+  padding-top: 8rem;
+}
+
+.contact-background {
   margin-left: 4rem;
 }
 
