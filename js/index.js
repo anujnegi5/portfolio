@@ -40,14 +40,86 @@ tl1
 
 var tl2 = gsap.timeline({ defaults: { duration: 1, opacity: 0 } });
 
+// my work
 tl2.from(".projects", { y: -50 });
 
-gsap.from(".recent", {
-  scrollTrigger: ".recent",
-  x: 70,
-  duration: 2,
-  opacity: 0,
+// latest projects
+var tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".recent",
+    toggleActions: "play none none none",
+    start: "top 90%",
+  },
 });
+tl3.from(".recent", { x: 70, opacity: 0, duration: 1 });
+
+var tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-1",
+    toggleActions: "play none none none",
+    start: "top 90%",
+  },
+});
+
+tl4.from(".project-1", { x: -200, opacity: 0, duration: 0.7 });
+
+var tl5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-2",
+    toggleActions: "play none none none",
+    start: "top 90%",
+  },
+});
+
+tl5.from(".project-2", { x: 200, opacity: 0, duration: 0.7 });
+
+var tl6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-3",
+    toggleActions: "play none none none",
+    start: "top 90%",
+  },
+});
+
+tl6.from(".project-3", { x: -200, opacity: 0, duration: 0.7 });
+
+var tl7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".scroll-btn",
+    toggleActions: "play none none none",
+    start: "top 90%",
+  },
+});
+
+tl7.from(".scroll-btn", { y: -50, opacity: 0, duration: 1.2 });
+
+// about me
+
+var tl8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#about-me",
+    toggleActions: "play none none none",
+    start: "top 80%",
+  },
+});
+
+tl8
+  .from(".tagline", { y: -50, opacity: 0, duration: 0.6, stagger: 0.6 })
+  .from(".about", { x: 100, opacity: 0, duration: 1 }, "-=0.6");
+
+// contact section
+var tl9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#contact",
+    toggleActions: "play none none none",
+    start: "top 80%",
+  },
+});
+
+tl9
+  .from(".contact", { x: -100, opacity: 0, duration: 1 })
+  .from(".email-svg", { x: -100, opacity: 0, duration: 1 }, "-=0.6")
+  .from(".email-content", { x: 100, opacity: 0, duration: 1 }, "-=0.6");
 
 //Navbar Social Media icons
 
