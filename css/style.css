@@ -1,3 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Preloader */
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ba55d3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff00ff;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Preloader End */
+
 @font-face {
   src: url("../assets/fonts/Atami-Bold.otf");
   font-family: atami;
@@ -11,7 +96,7 @@
   font-family: DMSreg;
 }
 @font-face {
-  src: url("../assets/fonts/Futura\ Bold.ttf");
+  src: url("../assets/fonts/FuturaBold.ttf");
   font-family: futura;
 }
 @font-face {
@@ -39,12 +124,6 @@
   --royal-blue-color: #5956e9;
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -200,6 +279,11 @@ a {
   border: 1px solid var(--gray-color);
 }
 
+.thick {
+  border: 3px solid var(--gray-color);
+  margin: 0 2rem;
+}
+
 .dark {
   border: 1px solid #ddd;
 }
@@ -223,12 +307,13 @@ a {
 /* Navbar */
 
 #navbar {
-  background: #fff;
-  z-index: 10;
-  box-shadow: 0 0.1rem 1rem var(--shadow-nav);
+  display: flex;
   position: sticky;
   top: 0;
-  display: flex;
+  height: 7vh;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 0.1rem 1rem var(--shadow-nav);
   font-family: atami;
   align-items: center;
   justify-content: space-between;
@@ -295,59 +380,73 @@ a {
 
 /* Showcase Area */
 #showcase {
-  height: 100vh;
+  height: 93vh;
   overflow: hidden;
   /* background: var(--gray-color); */
 }
 #showcase .background {
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 /* Shapes Start*/
 #showcase .blue-triangle-1 {
-  position: absolute;
-  top: 9rem;
-  left: 70rem;
+  position: relative;
+  top: 5rem;
+  left: 60rem;
+  /* animation: triangle 20s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; */
 }
+
+/* @keyframes triangle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
+
 #showcase .blue-triangle-2 {
   position: absolute;
   top: 21rem;
-  left: 74rem;
+  left: 64rem;
 }
 #showcase .blue-triangle-3 {
   position: absolute;
   top: 16rem;
-  left: 98rem;
+  left: 100rem;
 }
 #showcase .yellow-square-1 {
   position: absolute;
   top: 13rem;
-  left: 85rem;
+  left: 79rem;
 }
 #showcase .yellow-square-2 {
   position: absolute;
   top: 9rem;
-  left: 100rem;
+  left: 95rem;
 }
 #showcase .green-circle-1 {
   position: absolute;
-  top: 40rem;
-  left: -11rem;
+  top: 46rem;
+  left: -8rem;
 }
 #showcase .green-circle-2 {
   position: absolute;
-  top: 3rem;
-  left: 110rem;
+  top: -10rem;
+  left: 100rem;
 }
 #showcase .red-square-1 {
   position: absolute;
-  top: 25rem;
-  left: 111rem;
+  top: 51rem;
+  left: 30rem;
 }
 #showcase .purple-circles-1 {
   position: absolute;
   top: 38rem;
-  left: 63rem;
+  left: 53rem;
 }
 #showcase .pink-circles-1 {
   position: absolute;
@@ -360,6 +459,7 @@ a {
   top: 27rem;
   left: 75rem;
 }
+
 /* Shapes end */
 
 #showcase .showcase-content {
@@ -385,6 +485,14 @@ a {
   font-size: 8rem;
   color: var(--Bold-one);
 }
+
+/* #showcase h1 span {
+  transition: all 0.4s ease;
+}
+
+#showcase h1 span.fade {
+  color: var(--Bold-one);
+} */
 
 #showcase .social-media {
   margin-top: 2.25rem;

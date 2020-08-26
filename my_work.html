@@ -31,7 +31,10 @@
     />
     <title>Anuj Negi | Projects</title>
   </head>
-  <body>
+  <body onload="preload()">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
     <!-- Navbar -->
     <nav id="navbar">
       <div class="logo box-1">
@@ -92,11 +95,13 @@
     <section id="my-work">
       <div>
         <div class="showcase-content">
-          <h1 class="l-heading">Projects<span class="purple">.</span></h1>
+          <h1 class="l-heading projects">
+            Projects<span class="purple">.</span>
+          </h1>
         </div>
       </div>
     </section>
-    <hr class="horizontal" />
+    <hr class="horizontal thick" />
     <!-- PROJECTS CARD -->
     <div id="cards-holder">
       <section id="cards">
@@ -207,13 +212,12 @@
           />
         </div>
         <br />
-        <div>
-          &copy; 2020, All Rights Reserved
-        </div>
+        <div>&copy; 2020, All Rights Reserved</div>
       </div>
     </footer>
 
     <!-- JAVASCRIPT -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
