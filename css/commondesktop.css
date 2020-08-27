@@ -1,17 +1,3 @@
-:root {
-  --accent-color: #f85c81;
-  --purple-color: #6c63ff;
-  --yellow-color: #ffdc60;
-  --orange-color: #fe6d3f;
-  --gray-color: #ecf2f6;
-  --text-gray: #999fae;
-  --light-pink: #fab8c4;
-  --secondary-color: #525260;
-  --royal-blue-color: #5956e9;
-  --Bold-one: #27272e;
-  --shadow-nav: rgba(137, 129, 129, 0.2);
-}
-
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -51,7 +37,7 @@
 }
 
 #showcase {
-  height: 91vh;
+  height: 100vh;
 }
 
 #showcase .background {
@@ -116,7 +102,7 @@
 }
 
 #showcase .showcase-content {
-  padding: 6rem 3rem 10rem 3rem;
+  padding: 6rem 3rem 3rem 3rem;
 }
 
 #showcase .greet,
@@ -145,13 +131,13 @@
   background: #272727;
   padding: 0.6rem;
   border-radius: 50%;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   border: none;
 }
 
-#showcase .down-scroll {
-  bottom: 5rem;
-}
+/* #showcase .down-scroll {
+  bottom: 1rem;
+} */
 
 #showcase .l-heading {
   font-family: futura;
