@@ -67,7 +67,7 @@
 #showcase .yellow-square-2 {
   width: 22.375%;
   top: 37.44%;
-  left: 83.5%;
+  left: 78.5%;
 }
 #showcase .green-circle-1 {
   width: 40.625%;
@@ -75,9 +75,9 @@
   left: -22.5%;
 }
 #showcase .green-circle-2 {
-  width: 27.95%;
-  top: -5%;
-  left: 86.16%;
+  width: 20.95%;
+  top: -15%;
+  left: 71.16%;
 }
 #showcase .red-square-1 {
   width: 20.45%;
@@ -150,7 +150,7 @@
   background-position: -700px -50px;
   background-blend-mode: overlay;
   background: url("../assets/svgs/Asset\ 3.svg") center center/cover no-repeat;
-  height: 250vh;
+  height: 280vh;
 }
 
 #lat-projects .recent {

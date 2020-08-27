@@ -41,7 +41,7 @@
 
 #showcase .showcase-content {
   padding: 2rem 1rem 2rem 1rem;
-  margin: 6rem 0 6rem 0;
+  margin: 4rem 0 6rem 0;
 }
 
 #showcase .background {
@@ -55,7 +55,7 @@
 }
 #showcase .blue-triangle-2 {
   width: 8.7%;
-  top: 13.8%;
+  top: 11.8%;
   left: 30%;
 }
 #showcase .blue-triangle-3 {
@@ -81,11 +81,11 @@
 #showcase .green-circle-2 {
   width: 27.95%;
   top: -5%;
-  left: 86.16%;
+  left: 70.16%;
 }
 #showcase .red-square-1 {
   width: 20.45%;
-  top: 85.7%;
+  top: 77.7%;
   left: 25.33%;
 }
 #showcase .purple-circles-1 {
@@ -102,6 +102,7 @@
   width: 35.83%;
   top: 63.667%;
   left: 52%;
+  display: none;
 }
 
 #showcase .greet,
@@ -153,23 +154,20 @@
 }
 
 #lat-projects.container {
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 500px;
 }
 
 #lat-projects {
   margin-top: 0.5rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   background: var(--gray-color);
+  height: 280vh;
 }
 
 #lat-projects .project-triangle {
-  z-index: -200;
-  justify-content: center;
-  background-position: -700px -50px;
-  background-blend-mode: overlay;
-  background: url("../assets/svgs/Asset\ 3.svg") center center/cover no-repeat;
-  height: 210vh;
+  z-index: -100;
+  background: var(--gray-color);
 }
 
 #lat-projects .project-1 {

@@ -105,7 +105,7 @@ var tl8 = gsap.timeline({
 
 tl8
   .from(".tagline", { y: -50, opacity: 0, duration: 0.7, stagger: 0.6 })
-  .from(".about", { x: 100, opacity: 0, duration: 1 }, "-=0.2");
+  .from(".about", { x: 100, opacity: 0, duration: 1 }, "-=1.2");
 
 // contact section
 var tl9 = gsap.timeline({
