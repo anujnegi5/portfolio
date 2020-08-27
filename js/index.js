@@ -57,7 +57,7 @@ var tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: ".project-1",
     toggleActions: "play none none none",
-    start: "top 90%",
+    start: "top 80%",
   },
 });
 
@@ -67,7 +67,7 @@ var tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".project-2",
     toggleActions: "play none none none",
-    start: "top 90%",
+    start: "top 80%",
   },
 });
 
@@ -77,7 +77,7 @@ var tl6 = gsap.timeline({
   scrollTrigger: {
     trigger: ".project-3",
     toggleActions: "play none none none",
-    start: "top 90%",
+    start: "top 80%",
   },
 });
 
@@ -87,7 +87,7 @@ var tl7 = gsap.timeline({
   scrollTrigger: {
     trigger: ".scroll-btn",
     toggleActions: "play none none none",
-    start: "top 90%",
+    start: "top 80%",
   },
 });
 
@@ -104,8 +104,8 @@ var tl8 = gsap.timeline({
 });
 
 tl8
-  .from(".tagline", { y: -50, opacity: 0, duration: 0.6, stagger: 0.6 })
-  .from(".about", { x: 100, opacity: 0, duration: 1 }, "-=0.6");
+  .from(".tagline", { y: -50, opacity: 0, duration: 0.7, stagger: 0.6 })
+  .from(".about", { x: 100, opacity: 0, duration: 1 }, "-=0.2");
 
 // contact section
 var tl9 = gsap.timeline({
@@ -117,9 +117,9 @@ var tl9 = gsap.timeline({
 });
 
 tl9
-  .from(".contact", { x: -100, opacity: 0, duration: 1 })
-  .from(".email-svg", { x: -100, opacity: 0, duration: 1 }, "-=0.6")
-  .from(".email-content", { x: 100, opacity: 0, duration: 1 }, "-=0.6");
+  .from(".contact", { x: -100, opacity: 0, duration: 0.7 })
+  .from(".email-svg", { x: -100, opacity: 0, duration: 0.7 }, "-=0.6")
+  .from(".email-content", { x: 100, opacity: 0, duration: 0.7 }, "-=0.6");
 
 //Navbar Social Media icons
 

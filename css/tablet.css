@@ -1,37 +1,18 @@
-:root {
-  --accent-color: #f85c81;
-  --purple-color: #6c63ff;
-  --yellow-color: #ffdc60;
-  --orange-color: #fe6d3f;
-  --gray-color: #ecf2f6;
-  --text-gray: #999fae;
-  --light-pink: #fab8c4;
-  --secondary-color: #525260;
-  --royal-blue-color: #5956e9;
-  --Bold-one: #27272e;
-  --shadow-nav: rgba(137, 129, 129, 0.2);
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-::-webkit-scrollbar-thumb {
-  /* background: linear-gradient(#a18cd1, #fc9ae0); */
-  background: var(--accent-color);
-  border-radius: 3px;
-}
-
 /* Navbar */
 #navbar {
   flex-direction: column;
   align-items: center;
-  /* padding: 0.5rem 1rem; */
-  height: 120px;
+  justify-content: center;
+  height: 11vh;
 }
 
 #navbar .logo {
-  height: 36px;
-  margin: 0.2rem;
+  height: 34px;
+  margin: 0.3rem auto;
+}
+
+#navbar ul {
+  margin-right: 0;
 }
 
 #navbar ul li a {
@@ -43,7 +24,7 @@
 #navbar .social-media-nav {
   position: absolute;
   right: 70px;
-  top: 25px;
+  top: 9px;
 }
 #navbar .social-media-nav img {
   margin-top: 0.2rem;
@@ -52,12 +33,72 @@
 }
 
 #showcase {
-  height: 100vh;
+  height: 92vh;
   overflow: hidden;
 }
 
 #showcase .showcase-content {
   padding: 10rem 3rem 14rem 3rem;
+}
+
+#showcase .background {
+  display: block;
+}
+
+#showcase .blue-triangle-1 {
+  width: 12.2%;
+  top: 5.9%;
+  left: 10.56%;
+}
+#showcase .blue-triangle-2 {
+  width: 8.7%;
+  top: 13.8%;
+  left: 30%;
+}
+#showcase .blue-triangle-3 {
+  width: 10.07%;
+  top: 20.85%;
+  left: 79%;
+}
+#showcase .yellow-square-1 {
+  width: 16.09%;
+  top: 15.88%;
+  left: 55.16%;
+}
+#showcase .yellow-square-2 {
+  width: 12.375%;
+  top: 7.44%;
+  left: 63.5%;
+}
+#showcase .green-circle-1 {
+  width: 40.625%;
+  top: 65.03%;
+  left: -22.5%;
+}
+#showcase .green-circle-2 {
+  width: 27.95%;
+  top: -5%;
+  left: 86.16%;
+}
+#showcase .red-square-1 {
+  width: 20.45%;
+  top: 80.7%;
+  left: 20.33%;
+}
+#showcase .purple-circles-1 {
+  width: 25.38%;
+  top: 49.44%;
+  left: 76.5%;
+}
+#showcase .pink-circles-1 {
+  width: 22.05%;
+  left: -12.33%;
+  top: -3.4%;
+}
+#showcase .portfolio-svg {
+  width: 37.83%;
+  top: 63.667%;
+  left: 52%;
 }
 
 #showcase .greet,
@@ -78,7 +119,7 @@
 }
 
 #showcase .fa-chevron-down {
-  margin-top: 1rem;
+  margin-top: 0rem;
   border: none;
 }
 
@@ -96,24 +137,19 @@
   /* text-align: center; */
 }
 
-#showcase .background {
-  display: none;
-}
-
 #lat-projects {
   margin-top: 3rem;
   padding-top: 3rem;
 }
 
 #lat-projects .project-triangle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: -200;
   justify-content: center;
-  background: var(--gray-color);
-  height: 250vh;
+  background-position: -700px -50px;
+  background-blend-mode: overlay;
+  background: url("../assets/svgs/Asset\ 3.svg") center center/cover no-repeat;
+  height: 260vh;
 }
-
 #lat-projects .recent {
   margin-top: 7rem;
 }

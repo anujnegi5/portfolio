@@ -342,6 +342,7 @@ a {
   justify-items: end;
   align-items: center;
   list-style: none;
+  margin-right: 4rem;
 }
 
 #navbar .index {
@@ -893,6 +894,6 @@ a {
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
   box-shadow: 5px 5px 15px rgba(201, 201, 201, 0.6);
 }
