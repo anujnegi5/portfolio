@@ -511,6 +511,57 @@ a {
   margin-right: 2.25rem;
 }
 
+.middle {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouse {
+  width: 30px;
+  height: 54px;
+  border: 2px solid #333;
+  border-radius: 30px;
+}
+
+.mouse::before {
+  content: "";
+  height: 7.5px;
+  width: 7.5px;
+  position: absolute;
+  top: 5px;
+  background: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 8px;
+  }
+
+  to {
+    opacity: 0;
+    top: 42px;
+  }
+}
+
+.mouse-text {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: pop-reg;
+  color: #aaa;
+  font-weight: bold;
+}
+
 /* latest project section */
 
 #lat-projects {
