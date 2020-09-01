@@ -128,6 +128,7 @@ body {
   --royal-blue-color: #5956e9;
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
+  --greyish-color: #555555;
 }
 
 html {
@@ -324,17 +325,23 @@ a {
   padding: 0.85rem 3rem;
 }
 
-#navbar .social-media-nav div {
+/* #navbar .social-media-nav {
+  position: absolute;
+  left: 46%;
+} */
+
+#navbar .social-media-nav .nav-icon {
   position: relative;
   left: 60%;
   display: inline-block;
   justify-content: center;
 }
 
-#navbar .social-media-nav img {
+#navbar .social-media-nav i {
   margin-top: 0.2rem;
-  margin-right: 2.25rem;
+  margin-right: 1.5rem;
   height: 36px;
+  color: var(--text-gray);
 }
 
 #navbar ul {
@@ -465,6 +472,25 @@ a {
   left: 75rem;
 }
 
+#showcase .portfolio-svg {
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+
 /* Shapes end */
 
 #showcase .showcase-content {
@@ -473,16 +499,29 @@ a {
 
 #showcase .greet,
 #showcase .designation {
-  font-family: DMSreg;
-  font-size: 3.5rem;
-  color: var(--secondary-color);
+  font-family: pop-reg;
+  font-size: 3rem;
+  color: var(--greyish-color);
 }
 #showcase .designation {
   margin-top: 1rem;
   font-size: 3rem;
-  line-height: 5rem;
+  line-height: 4rem;
   /* text-decoration: underline; */
 }
+
+/* .float {
+  float: right;
+}
+
+.only-A {
+  font-size: 20rem;
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--gray-color);
+} */
 
 #showcase .l-heading {
   font-family: futura;
@@ -490,6 +529,16 @@ a {
   font-size: 8rem;
   color: var(--Bold-one);
 }
+
+/* #showcase .l-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 5px;
+  width: 6%;
+  border-top: 7px solid var(--text-gray);
+} */
 
 /* #showcase h1 span {
   transition: all 0.4s ease;
@@ -500,15 +549,17 @@ a {
 } */
 
 #showcase .social-media {
-  margin-top: 2.25rem;
+  margin-top: 2rem;
+  display: inline-block;
 }
 
 #showcase .social-media div {
   display: inline-block;
 }
 
-#showcase .social-media img {
-  margin-right: 2.25rem;
+#showcase .social-media i {
+  margin-right: 1rem;
+  color: var(--text-gray);
 }
 
 .middle {
@@ -521,7 +572,7 @@ a {
 .mouse {
   width: 30px;
   height: 54px;
-  border: 2px solid #333;
+  border: 2px solid var(--text-gray);
   border-radius: 30px;
 }
 
@@ -531,7 +582,7 @@ a {
   width: 7.5px;
   position: absolute;
   top: 5px;
-  background: #333;
+  background: var(--text-gray);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
