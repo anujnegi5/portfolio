@@ -407,19 +407,11 @@ a {
   position: relative;
   top: 5rem;
   left: 60rem;
-  /* animation: triangle 20s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box; */
 }
 
-/* @keyframes triangle {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-} */
+#showcase .background img {
+  object-fit: cover;
+}
 
 #showcase .blue-triangle-2 {
   position: absolute;
@@ -655,7 +647,7 @@ a {
 #lat-projects .project-2 {
   display: flex;
   background: #f5f9fa;
-  margin: 6rem 2rem 3rem 25rem;
+  margin: 6rem 4rem 3rem auto;
   height: 500px;
   width: 1450px;
   border-radius: 35px;

@@ -38,10 +38,15 @@ tl1
   .from(".left", { x: -100 }, "-=1")
   .from(".down", { y: 100 }, "-=1");
 
-var tl2 = gsap.timeline({ defaults: { duration: 1, opacity: 0 } });
+var tl2 = gsap.timeline({
+  defaults: { duration: 1, opacity: 0 },
+});
 
 // my work
-tl2.from(".projects", { y: -50 });
+tl2
+  .from(".projects", { y: -50, opacity: 0 })
+  .from(".left-project", { x: -100, opacity: 0 }, "-=0.5")
+  .from(".right-project", { x: 100 }, "-=1");
 
 // latest projects
 var tl3 = gsap.timeline({
@@ -121,6 +126,20 @@ tl9
   .from(".email-svg", { x: -100, opacity: 0, duration: 0.7 }, "-=0.6")
   .from(".email-content", { x: 100, opacity: 0, duration: 0.7 }, "-=0.6");
 
+// Parallax
+
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  this.querySelectorAll(".layer").forEach((layer) => {
+    const speed = layer.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerWidth - e.pageY * speed) / 100;
+
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  });
+}
+
 //Navbar Social Media icons
 
 var opacity = 0;
@@ -140,38 +159,46 @@ function hide() {
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos > 650) {
-    document.querySelector(".index").style.display = "inline-block";
+    if (document.querySelector(".index") == null) {
+      return;
+    } else {
+      document.querySelector(".index").style.display = "inline-block";
+    }
   } else {
-    document.querySelector(".index").style.display = "none";
+    if (document.querySelector(".index") == null) {
+      return;
+    } else {
+      document.querySelector(".index").style.display = "none";
+    }
   }
 };
 
 // Fancy Name text
 
-const text = document.querySelector(".fancy");
-const strText = text.textContent;
-const splitText = strText.split("");
+// const text = document.querySelector(".fancy");
+// const strText = text.textContent;
+// const splitText = strText.split("");
 
-text.textContent = "";
+// text.textContent = "";
 
-for (let i = 0; i < splitText.length; i++) {
-  text.innerHTML += "<span>" + splitText[i] + "</span>";
-}
+// for (let i = 0; i < splitText.length; i++) {
+//   text.innerHTML += "<span>" + splitText[i] + "</span>";
+// }
 
-let char = 0;
-let timer = setInterval(onTick, 50);
+// let char = 0;
+// let timer = setInterval(onTick, 50);
 
-function onTick() {
-  const span = text.querySelectorAll("span")[char];
-  span.classList.add("fade");
-  char++;
-  if (char === splitText.length) {
-    complete();
-    return;
-  }
-}
+// function onTick() {
+//   const span = text.querySelectorAll("span")[char];
+//   span.classList.add("fade");
+//   char++;
+//   if (char === splitText.length) {
+//     complete();
+//     return;
+//   }
+// }
 
-function complete() {
-  clearInterval(timer);
-  timer = null;
-}
+// function complete() {
+//   clearInterval(timer);
+//   timer = null;
+// }
