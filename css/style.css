@@ -129,6 +129,7 @@ body {
   --Bold-one: #27272e;
   --shadow-nav: rgba(137, 129, 129, 0.2);
   --greyish-color: #555555;
+  --react-color: #00d8ff;
 }
 
 html {
@@ -168,6 +169,10 @@ a {
 /* Color classes */
 .accent-color {
   color: var(--accent-color);
+}
+
+.react-color {
+  color: #00d8ff;
 }
 
 .purple {
@@ -642,6 +647,7 @@ a {
   display: flex;
   background: #fcfaf9;
   margin: 6rem 9rem 3rem 4rem;
+  align-items: center;
   height: 500px;
   width: 1450px;
   border-radius: 35px;
@@ -650,6 +656,7 @@ a {
 
 #lat-projects .project-2 {
   display: flex;
+  align-items: center;
   background: #f5f9fa;
   margin: 6rem 4rem 3rem auto;
   height: 500px;
@@ -659,6 +666,7 @@ a {
 }
 #lat-projects .project-3 {
   display: flex;
+  align-items: center;
   background: #f7f9ff;
   margin: 6rem 9rem 3rem 4rem;
   height: 500px;
@@ -669,15 +677,16 @@ a {
 }
 
 #lat-projects .project-1 .project-info {
-  margin: 4.375rem 7.8125rem 4.375rem 7rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 #lat-projects .project-2 .project-info {
-  margin: 4.375rem 7rem 4.375rem 7rem;
+  margin: auto 4rem;
 }
 
 #lat-projects .project-3 .project-info {
-  margin: 4.375rem 5.625rem 4.375rem 7rem;
+  margin: auto 4rem;
 }
 
 #lat-projects .project-1 a,
@@ -692,18 +701,18 @@ a {
   font-family: futura;
   font-size: 2.5rem;
   padding-left: 11px;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
   color: #000;
 }
 
 #lat-projects .project-1 .left-border {
-  border-left: 8px solid #ffdc60;
+  border-left: 8px solid var(--react-color);
 }
 #lat-projects .project-2 .left-border {
-  border-left: 8px solid #72ddfd;
+  border-left: 8px solid var(--orange-color);
 }
 #lat-projects .project-3 .left-border {
-  border-left: 8px solid #9690fb;
+  border-left: 8px solid var(--react-color);
 }
 
 #lat-projects .project-1 .pro-detail,
@@ -712,28 +721,8 @@ a {
   margin-left: 1.25rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
   color: var(--text-gray);
-}
-
-#lat-projects .project-1 .project-info .project-type {
-  margin-left: 1.25rem;
-  background: #f9daaf;
-  padding: 1rem;
-  border-radius: 50%;
-}
-
-#lat-projects .project-2 .project-info .project-type {
-  margin-left: 1.25rem;
-  background: #d8f2fa;
-  padding: 0.5rem;
-  border-radius: 50%;
-}
-
-#lat-projects .project-3 .project-info .project-type {
-  margin-left: 20px;
-  background: #d6e1ff;
-  padding: 1rem;
-  border-radius: 50%;
 }
 
 #lat-projects .project-1 .project-btn,
@@ -753,14 +742,17 @@ a {
 #lat-projects .project-1 .project-img img,
 #lat-projects .project-3 .project-img img {
   width: 490px;
-  margin-top: 66px;
-  margin-right: 112px;
+  margin: 0 3rem auto 0rem;
+  box-shadow: 0 0.2rem 1rem var(--shadow-nav);
+  border-radius: 20px;
 }
 
 #lat-projects .project-2 .project-img img {
   width: 29.0625rem;
-  margin-top: 4.125rem;
-  margin-left: 7rem;
+  margin-top: 0rem;
+  margin-left: 3rem;
+  box-shadow: 0 0.2rem 1rem var(--shadow-nav);
+  border-radius: 20px;
 }
 
 #lat-projects .work {
@@ -770,12 +762,16 @@ a {
   color: white;
   background: #3c3838;
   align-items: center;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
 }
 
 #lat-projects .work:hover {
   background: white;
-  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--secondary-color); */
   color: var(--secondary-color);
+  box-shadow: 0 0.2rem 1rem var(--shadow-nav);
 }
 
 /* Recent projects End */
@@ -914,7 +910,7 @@ a {
 
 #my-work .showcase-content .l-heading {
   font-family: futura;
-  line-height: 10rem;
+  line-height: 8rem;
   font-size: 8rem;
   color: var(--Bold-one);
   text-align: center;
@@ -958,6 +954,7 @@ a {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .card-text {
@@ -989,6 +986,40 @@ a {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+/* For no live preview */
+.card-link {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-link .link a {
+  text-decoration: none;
+  color: var(--Bold-one);
+}
+
+.card-link .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-link .link-github {
+  background: var(--gray-color);
+  border-bottom-right-radius: 15px;
+}
+
+.card-link .link .github-link {
+  font-size: 16px;
+}
+
+/* ------END------ */
 
 .card-links .link a {
   text-decoration: none;
