@@ -215,7 +215,11 @@ a {
 }
 ::-webkit-scrollbar-thumb {
   /* background: linear-gradient(#a18cd1, #fc9ae0); */
-  background: linear-gradient(#434343, #000000);
+  background-image: radial-gradient(
+    circle 757px at 14.6% 44.8%,
+    rgb(170, 170, 170) 27.7%,
+    rgb(153, 152, 152) 95.9%
+  );
   border-radius: 6px;
 }
 
@@ -940,16 +944,18 @@ a {
   font-family: DMS;
   border-radius: 18px;
   background: #fff;
-  box-shadow: 5px 5px 15px rgba(201, 201, 201, 0.9);
+  box-shadow: 5px 5px 15px rgba(177, 177, 177, 0.9);
   text-align: center;
 
   transition: 0.5s ease;
   /* cursor: pointer; */
 }
 
-.card-image {
+.card-image img {
   grid-area: image;
-  background: url("../img/projects/backiee-1.jpg") center center/cover;
+  height: 210px;
+  width: 300px;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -971,18 +977,17 @@ a {
 }
 
 .card-text h2 {
-  margin-top: 0px;
+  margin: 0.25rem 0;
   font-size-adjust: 28px;
 }
 
 .card-links {
   grid-area: links;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: var(--gray-color);
 }
 
 .card-links .link a {
@@ -998,8 +1003,29 @@ a {
   padding: 10px;
 }
 
+.card-links .link-github {
+  background: var(--gray-color);
+}
+
+.card-links .live {
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(244, 89, 89) 0%,
+    rgba(223, 23, 55, 1) 90%
+  );
+  border-bottom-right-radius: 15px;
+}
+
 .card-links .link .github-link {
   font-size: 16px;
+}
+.card-links .link .live-link {
+  font-size: 16px;
+  color: white;
+}
+.card-links .link .live-link i {
+  font-size: 1.5rem;
+  color: white;
 }
 
 .card:hover {
