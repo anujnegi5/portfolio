@@ -43,7 +43,7 @@
 }
 
 #showcase .showcase-content {
-  padding: 10rem 2rem 14rem 2rem;
+  padding: 14rem 2rem;
 }
 
 #showcase .background {
@@ -51,7 +51,7 @@
 }
 
 #showcase .blue-triangle-1 {
-  width: 22.2%;
+  width: 17.2%;
   top: 49.9%;
   left: -7.56%;
 }
@@ -76,8 +76,8 @@
   left: 63.5%;
 }
 #showcase .green-circle-1 {
-  width: 40.625%;
-  top: 70.03%;
+  width: 30.625%;
+  top: 76.03%;
   left: -22.5%;
 }
 #showcase .green-circle-2 {
@@ -91,7 +91,7 @@
   left: 70.33%;
 }
 #showcase .purple-circles-1 {
-  width: 29.38%;
+  width: 26.38%;
   top: 49.44%;
   left: 72.5%;
 }
@@ -104,14 +104,9 @@
   display: none;
 }
 
-#showcase .showcase-content {
-  padding: 10rem 2rem;
-  margin: 2rem 0;
-}
-
 #showcase .greet,
 #showcase .designation {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   line-height: 0.5rem;
 }
 #showcase .designation {
@@ -119,11 +114,11 @@
 }
 
 #showcase .social-media {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #showcase .l-heading {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 #lat-projects .project-triangle {

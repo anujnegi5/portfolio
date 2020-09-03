@@ -17,7 +17,7 @@
 /* Navbar */
 #navbar {
   flex-direction: column;
-  height: 10vh;
+  height: 11vh;
   position: sticky;
 }
 
@@ -48,15 +48,15 @@
 }
 
 #showcase {
-  height: 90vh;
+  height: 89vh;
 }
 
 #showcase .showcase-content {
-  padding: 8rem 5rem 13rem 5rem;
+  padding: 4rem 5rem auto 5rem;
 }
 
 #showcase .blue-triangle-1 {
-  width: 16.2%;
+  width: 10.2%;
   top: 52.9%;
   left: -3.56%;
 }
@@ -66,53 +66,49 @@
   left: 30%;
 }
 #showcase .blue-triangle-3 {
-  width: 16.07%;
-  top: 23.85%;
-  left: 79%;
+  width: 14.07%;
+  top: 20.85%;
+  left: 81%;
 }
 #showcase .yellow-square-1 {
   width: 16.09%;
-  top: 12.88%;
-  left: 63.16%;
+  top: 10.88%;
+  left: 60.16%;
 }
 #showcase .yellow-square-2 {
-  width: 22.375%;
-  top: 37.44%;
+  width: 14.375%;
+  top: 35.44%;
   left: 78.5%;
 }
 #showcase .green-circle-1 {
-  width: 32.625%;
+  width: 22.625%;
   top: 72.03%;
-  left: -20.5%;
+  left: -15.5%;
 }
 #showcase .green-circle-2 {
-  width: 20.95%;
-  top: -9%;
-  left: 78.16%;
+  width: 14.95%;
+  top: -10%;
+  left: 80.16%;
 }
 #showcase .red-square-1 {
-  width: 20.45%;
+  width: 13.45%;
   top: 80.7%;
   left: 20.33%;
 }
 #showcase .purple-circles-1 {
-  width: 20.38%;
-  top: 55.44%;
+  width: 14.38%;
+  top: 58.44%;
   left: 37.5%;
 }
 #showcase .pink-circles-1 {
-  width: 22.05%;
+  width: 18.05%;
   left: -12.33%;
   top: -7.4%;
 }
 #showcase .portfolio-svg {
-  width: 30.83%;
+  width: 24.83%;
   top: 60.667%;
   left: 64%;
-}
-
-#showcase .showcase-content {
-  padding: 11rem 5rem;
 }
 
 #showcase .greet,
@@ -146,7 +142,7 @@
   align-items: center;
   justify-content: center;
   z-index: -200;
-  height: 230vh;
+  height: 300vh;
 }
 
 #lat-projects .recent {
