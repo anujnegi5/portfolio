@@ -1,3 +1,19 @@
+:root {
+  --accent-color: #f85c81;
+  --purple-color: #6c63ff;
+  --yellow-color: #ffdc60;
+  --orange-color: #fe6d3f;
+  --gray-color: #ecf2f6;
+  --text-gray: #999fae;
+  --light-pink: #fab8c4;
+  --secondary-color: #525260;
+  --royal-blue-color: #5956e9;
+  --Bold-one: #27272e;
+  --shadow-nav: rgba(137, 129, 129, 0.2);
+  --greyish-color: #555555;
+  --react-color: #00d8ff;
+}
+
 /* Navbar */
 #navbar {
   flex-direction: column;
@@ -198,13 +214,13 @@
 }
 
 #lat-projects .project-1 .left-border {
-  border-left: 3px solid #ffdc60;
+  border-left: 3px solid var(--react-color);
 }
 #lat-projects .project-2 .left-border {
-  border-left: 3px solid #72ddfd;
+  border-left: 3px solid var(--orange-color);
 }
 #lat-projects .project-3 .left-border {
-  border-left: 3px solid #9690fb;
+  border-left: 3px solid var(--react-color);
 }
 
 #lat-projects .project-1 .pro-detail,
